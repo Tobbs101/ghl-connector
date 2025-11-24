@@ -1,5 +1,6 @@
 import { Bell, LogOut, Menu } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import logo from "../assets/logo.jpeg";
 
 interface TopBarProps {
   onMenuClick: () => void;
@@ -35,11 +36,20 @@ const TopBar = ({
         >
           <Menu className="h-5 w-5" />
         </button>
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
-            Lumeo
-          </p>
-          <h1 className="text-xl font-semibold text-slate-900">{title}</h1>
+        <div className="flex items-center gap-3">
+          {/* <div className="hidden h-10 w-10 overflow-hidden rounded-2xl bg-slate-900 sm:block">
+            <img
+              src={logo}
+              alt="Lumeo logo"
+              className="h-full w-full object-cover"
+            />
+          </div> */}
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+              Lumeo
+            </p>
+            <h1 className="text-xl font-semibold text-slate-900">{title}</h1>
+          </div>
         </div>
       </div>
       <div className="flex items-center gap-3">
@@ -49,16 +59,15 @@ const TopBar = ({
         >
           {collapsed ? 'Expand' : 'Collapse'}
         </button> */}
-        <button className="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 text-slate-600 transition hover:text-lumeo">
+        <button className="relative inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-slate-600 transition hover:text-lumeo">
           <Bell className="h-4 w-4" />
           <span className="absolute right-2 top-2 inline-flex h-2 w-2 rounded-full bg-emerald-400" />
         </button>
         <button
           onClick={onLogout}
-          className="inline-flex items-center gap-2 rounded-2xl bg-lumeo px-4 py-2 text-sm font-semibold text-white transition hover:bg-black"
+          className="inline-flex items-center gap-2 rounded-xl bg-lumeo px-4 py-[14px] text-sm font-semibold text-white transition hover:bg-black"
         >
           <LogOut className="h-4 w-4" />
-          <span className="hidden sm:inline">Logout</span>
         </button>
       </div>
     </header>

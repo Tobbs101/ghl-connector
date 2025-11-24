@@ -1,12 +1,12 @@
-import { useMemo, useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import AppLayout from './layouts/AppLayout';
-import Dashboard from './pages/Dashboard';
-import Traffic from './pages/Traffic';
-import Mapping from './pages/Mapping';
-import Reports from './pages/Reports';
-import Settings from './pages/Settings';
-import Login from './components/Login';
+import { useMemo, useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import AppLayout from "./layouts/AppLayout";
+import Dashboard from "./pages/Dashboard";
+import Traffic from "./pages/Traffic";
+import Mapping from "./pages/Mapping";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
+import Login from "./components/Login";
 
 type Credentials = {
   username: string;
@@ -15,21 +15,21 @@ type Credentials = {
 
 const App = () => {
   const rememberedAuth = useMemo(() => {
-    if (typeof window === 'undefined') {
+    if (typeof window === "undefined") {
       return false;
     }
-    return window.sessionStorage.getItem('lumeo-authenticated') === 'true';
+    return window.sessionStorage.getItem("lumeo-authenticated") === "true";
   }, []);
 
   const [isAuthenticated, setIsAuthenticated] = useState(rememberedAuth);
 
   const handleAuthenticate = ({ username, password }: Credentials) => {
     const normalizedUser = username.trim().toLowerCase();
-    const isValid = normalizedUser === 'admin' && password === 'admin';
+    const isValid = normalizedUser === "admin" && password === "admin";
 
     if (isValid) {
       setIsAuthenticated(true);
-      window.sessionStorage.setItem('lumeo-authenticated', 'true');
+      window.sessionStorage.setItem("lumeo-authenticated", "true");
       return true;
     }
 
@@ -38,7 +38,7 @@ const App = () => {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    window.sessionStorage.removeItem('lumeo-authenticated');
+    window.sessionStorage.removeItem("lumeo-authenticated");
   };
 
   if (!isAuthenticated) {

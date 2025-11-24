@@ -41,7 +41,7 @@ const Dashboard = () => (
       ))}
     </section>
 
-    <section className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
+    <section className="grid gap-6 overflow-x-auto 2xl:grid-cols-[1.4fr_1fr]">
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div>

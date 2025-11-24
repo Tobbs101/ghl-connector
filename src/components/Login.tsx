@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import logo from "../assets/logo.jpeg";
 
 interface LoginProps {
   onAuthenticate: (credentials: {
@@ -30,10 +31,13 @@ const Login = ({ onAuthenticate }: LoginProps) => {
         <div className="relative flex flex-col justify-between bg-lumeo px-10 py-12 text-white">
           <div>
             <div className="mb-10 inline-flex items-center gap-3 text-lg font-semibold">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/30 text-2xl font-bold">
-                L
+              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-white/30 bg-white/10">
+                <img
+                  src={logo}
+                  alt="Lumeo logo"
+                  className="h-full w-full object-cover"
+                />
               </div>
-              Lumeo
             </div>
             <h1 className="text-3xl font-semibold leading-tight lg:text-4xl">
               Route every payload with confidence.

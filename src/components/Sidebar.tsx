@@ -7,6 +7,7 @@ import {
   Home,
   Settings,
 } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 const navItems = [
   { label: "Dashboard", icon: Home, path: "/" },
@@ -40,8 +41,12 @@ const Sidebar = ({
     >
       <div className="flex items-center justify-between gap-2 px-5 py-5">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-lumeo text-lg font-semibold text-white">
-            L
+          <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl bg-slate-900">
+            <img
+              src={logo}
+              alt="Lumeo logo"
+              className="h-full w-full object-cover"
+            />
           </div>
           {!collapsed && (
             <div>
