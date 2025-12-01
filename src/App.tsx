@@ -7,6 +7,7 @@ import Mapping from "./pages/Mapping";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import Login from "./components/Login";
+import Admin from "./pages/Admin";
 
 type Credentials = {
   username: string;
@@ -51,6 +52,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/traffic" element={<Traffic />} />
+          <Route path="/users" element={<Admin />} />
           <Route path="/mapping" element={<Mapping />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />

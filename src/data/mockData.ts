@@ -1,4 +1,4 @@
-import type { TrafficEvent } from "../types";
+import type { TrafficEvent, User } from "../types";
 
 export const apiStats = [
   {
@@ -131,4 +131,71 @@ export const timeline = [
     detail: "Slack alert delivered to RevOps escalation channel.",
     time: "07:55",
   },
+];
+
+export const users: User[] = [
+  {
+    id: "USR-001",
+    name: "Sarah Anderson",
+    email: "sarah.anderson@company.com",
+    role: "Admin",
+    status: "Active",
+    joinedDate: "Nov 15, 2023",
+  },
+  {
+    id: "USR-002",
+    name: "Michael Chen",
+    email: "michael.chen@company.com",
+    role: "Manager",
+    status: "Active",
+    joinedDate: "Jan 08, 2024",
+  },
+  {
+    id: "USR-003",
+    name: "Emma Rodriguez",
+    email: "emma.rodriguez@company.com",
+    role: "User",
+    status: "Active",
+    joinedDate: "Feb 20, 2024",
+  },
+  // {
+  //   id: "USR-004",
+  //   name: "James Wilson",
+  //   email: "james.wilson@company.com",
+  //   role: "Manager",
+  //   status: "Active",
+  //   joinedDate: "Dec 01, 2023",
+  // },
+  // {
+  //   id: "USR-005",
+  //   name: "Lisa Thompson",
+  //   email: "lisa.thompson@company.com",
+  //   role: "User",
+  //   status: "Inactive",
+  //   joinedDate: "Oct 10, 2023",
+  // },
+  // {
+  //   id: "USR-006",
+  //   name: "David Park",
+  //   email: "david.park@company.com",
+  //   role: "User",
+  //   status: "Active",
+  //   joinedDate: "Mar 15, 2024",
+  // },
+  // {
+  //   id: "USR-007",
+  //   name: "Amanda Foster",
+  //   email: "amanda.foster@company.com",
+  //   role: "Admin",
+  //   status: "Active",
+  //   joinedDate: "Sep 22, 2023",
+  // },
+  // {
+  //   id: "USR-008",
+  //   name: "Robert Martinez",
+  //   email: "robert.martinez@company.com",
+  //   role: "User",
+  //   status: "Active",
+  //   joinedDate: "Apr 05, 2024",
+  // },
 ];

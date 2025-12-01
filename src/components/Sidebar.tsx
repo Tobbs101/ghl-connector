@@ -6,12 +6,14 @@ import {
   GitCompare,
   Home,
   Settings,
+  Shield,
 } from "lucide-react";
 import logo from "../assets/logo.jpeg";
 
 const navItems = [
   { label: "Dashboard", icon: Home, path: "/" },
   { label: "Traffic", icon: Gauge, path: "/traffic" },
+  { label: "Users", icon: Shield, path: "/users" },
   { label: "Mapping", icon: GitCompare, path: "/mapping" },
   { label: "Reports", icon: ActivitySquare, path: "/reports" },
   { label: "Settings", icon: Settings, path: "/settings" },
