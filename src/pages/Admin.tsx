@@ -108,7 +108,7 @@ const Admin = () => {
 
   return (
     <div className="space-y-8">
-      <section className="rounded-3xl bg-white px-8 py-10 shadow-md">
+      <section className="rounded-3xl bg-white px-8 py-10 shadow-md  border-orange">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <div className="flex items-center gap-3">
@@ -131,7 +131,7 @@ const Admin = () => {
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm anim">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-slate-600">Total Users</p>
@@ -142,7 +142,7 @@ const Admin = () => {
             <Users className="h-8 w-8 text-slate-400" />
           </div>
         </div>
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm anim">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-slate-600">Admins</p>
@@ -153,7 +153,7 @@ const Admin = () => {
             <Shield className="h-8 w-8 text-red-400" />
           </div>
         </div>
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm anim">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-slate-600">Active Users</p>
