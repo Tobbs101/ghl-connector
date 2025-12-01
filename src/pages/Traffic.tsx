@@ -24,7 +24,7 @@ const Traffic = () => (
     </div>
 
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      <div className="rounded-3xl border border-slate-100 bg-white p-5">
+      <div className="rounded-3xl border border-slate-100 bg-white p-5 anim">
         <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
           Inbound
         </p>
@@ -36,7 +36,7 @@ const Traffic = () => (
           </div>
         </div>
       </div>
-      <div className="rounded-3xl border border-slate-100 bg-white p-5">
+      <div className="rounded-3xl border border-slate-100 bg-white p-5 anim">
         <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
           Outbound
         </p>
@@ -48,14 +48,14 @@ const Traffic = () => (
           </div>
         </div>
       </div>
-      <div className="rounded-3xl border border-slate-100 bg-white p-5">
+      <div className="rounded-3xl border border-slate-100 bg-white p-5 anim">
         <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
           Retries
         </p>
         <p className="mt-3 text-3xl font-semibold text-slate-900">18</p>
         <p className="text-xs text-rose-500">Stripe throttling</p>
       </div>
-      <div className="rounded-3xl border border-slate-100 bg-white p-5">
+      <div className="rounded-3xl border border-slate-100 bg-white p-5 anim">
         <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
           Avg latency
         </p>
