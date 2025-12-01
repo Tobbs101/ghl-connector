@@ -6,7 +6,7 @@ import { apiStats, timeline, trafficEvents } from "../data/mockData";
 
 const Dashboard = () => (
   <div className="space-y-8">
-    <section className="rounded-3xl bg-gradient-to-br from-lumeo to-black px-8 py-10 text-white shadow-xl">
+    <section className="rounded-3xl bg-gradient-to-br from-lumeo to-black px-8 py-10 text-white shadow-xl border-orange">
       <div className="flex flex-wrap flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <p className="text-sm uppercase tracking-[0.2em] text-white/60">
