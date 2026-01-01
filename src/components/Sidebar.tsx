@@ -13,9 +13,8 @@ import logo from "../assets/logo.jpeg";
 const navItems = [
   { label: "Dashboard", icon: Home, path: "/" },
   { label: "Traffic", icon: Gauge, path: "/traffic" },
-  { label: "Users", icon: Shield, path: "/users" },
-  { label: "Mapping", icon: GitCompare, path: "/mapping" },
-  { label: "Reports", icon: ActivitySquare, path: "/reports" },
+  { label: "Admin", icon: Shield, path: "/users" },
+  { label: "Sync", icon: GitCompare, path: "/mapping" },
   { label: "Settings", icon: Settings, path: "/settings" },
 ];
 
@@ -110,9 +109,9 @@ const Sidebar = ({
       {!collapsed && (
         <div className="mt-auto px-4 pb-6">
           <div className="rounded-2xl border border-dashed border-slate-200 px-4 py-4 text-xs text-slate-500">
-            <p className="font-semibold text-slate-900">Staging queue</p>
-            <p className="mt-1 text-2xl font-bold text-lumeo">128</p>
-            <p>payloads waiting to sync</p>
+            <p className="font-semibold text-slate-900">Sync Queue</p>
+            <p className="mt-1 text-2xl font-bold text-lumeo">47</p>
+            <p>resources pending sync</p>
           </div>
         </div>
       )}

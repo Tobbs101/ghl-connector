@@ -21,3 +21,16 @@ export interface User {
   status: UserStatus;
   joinedDate: string;
 }
+
+export type SyncStatus = "Synced" | "Retrying" | "Failed" | "Queued";
+
+export interface SyncHistoryRecord {
+  id: string;
+  resourceType: "Patient" | "Appointment";
+  resourceId: string;
+  resourceName: string;
+  status: SyncStatus;
+  timestamp: string;
+  latency: string;
+  ghlContactId: string | null;
+}
